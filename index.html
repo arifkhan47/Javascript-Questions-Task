@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabular Data Representation</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+ // 1.There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. 
+// Sample array :
+// array1 = [1,0,2,3,4];
+// array2 = [3,5,6,7,8,13];
+// Expected Output :
+// [4, 5, 8, 10, 12, 13]
+
+ let array1 = [1,0,2,3,4],
+ 	 array2 = [3,5,6,7,8,13],
+ 	 array3 = [];
+
+
+ 	for (i = 0; i < array2.length; i++) {
+ 		let newarray = array1[i] === undefined ? 0 : array1[i];
+ 		array3.push(array2[i] + newarray);
+ 	}
+ 	console.log(array3);
+
+
+// 2. Write a JavaScript program to get the width and height of the window (any time the window is resized).
+
+ let wWidth = window.innerWidth,
+	 wHeight = window.innerHeight;
+
+	 console.log("window width :" + wWidth + " window height :" + wHeight);
+
+
+
+
+// 3. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.
+
+
+// var library = [ 
+//    {
+//        author: 'Bill Gates',
+//        title: 'The Road Ahead',
+//        readingStatus: true
+//    },
+//    {
+//        author: 'Steve Jobs',
+//        title: 'Walter Isaacson',
+//        readingStatus: true
+//    },
+//    {
+//        author: 'Suzanne Collins',
+//        title:  'Mockingjay: The Final Book of The Hunger Games', 
+//        readingStatus: false
+//    }];
+
+
+
+//    for (var i = 0; i < library.length; i++) {
+//    	console.log(value.title) ;
+//    }
+
+
+
+
+
+
+
+
+// 4.Write a JavaScript function to split a string and convert it into an array of words.
+// Test Data :
+// console.log(string_to_array("Robin Singh"));
+// ["Robin", "Singh”]
+
+		string_to_array = function (str) { 
+     	return str.split(" ");
+    	};
+		console.log(string_to_array("Robin Singh"));	
+
+
+
+// 6. Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
+
+		for (var i = 0; i < 100 ; i++) {
+			if (i % 3 === 0 && i % 5 == 0) {
+				console.log(i + "Firebuzz");
+			}else if(i % 5 === 0){
+				console.log(i + "Buzz");
+			}else if(i % 3 == 0 ){
+				console.log(i + "Fizz");
+			}else{
+				console.log(i);
+			}
+		}
+
+
+
+
+// 7.  Write a JavaScript function that reverse a number.
+// Example x = 32243;
+// Expected Output : 34223
+// 
+function reverse_a_number(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
+}
+console.log(reverse_a_number(987654321));
+
+
+// 8. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+
+
+	let string1 = "Web Development Tutorial";
+	let str = string1.split(" ");
+
+	for (var i = 0; i < str.length; i++) {
+		if (true) {}
+	}
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
